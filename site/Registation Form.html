@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Student Registration Form
+    </title>
+    <body>
+        <img src = "image.png" alt="image">
+        <h1 style="color: red;">Student Registration</h1>
+        <h2>Personal Details</h2>
+        <form autocomplete="on" method="POST">
+            <fieldset>
+                <legend>Details</legend>
+                <label for="fname">Full Name</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="fname1">Registration Number</label><br>
+                <input type="number" id="fname11" name="fname1"><br>
+                <label for="fname2">Roll Number</label><br>
+                <input type="number" id="fname2" name="fname2"><br>
+                <label for="pass">Password</label><br>
+                <input type="password" id="pass" name="pass"><br><br>
+                <input type="submit" value="Submit as multipart/form-data" formenctype="multipart/form-data">
+                <input type="reset">
+            </fieldset>
+        </form>
+        <br>
+        <h2>Branch Details</h2>
+        <form>
+            <label for="branch">Choose your branch</label>
+            <select id="branch" name="branch">
+                <option value="ece">ECE</option>
+                <option value="mech">MECH</option>
+                <option value="cse">CSE</option>
+                <option value="bth">BioTech</option>
+                <option value="che">CHEM</option>
+                <option value="eee">EEE</option>
+                <option value="mme">MME</option>
+            </select>
+        </form>
+        <br><hr>
+        <h2>Course Details</h2>
+        <form>
+            <label for="courses"><b>Choose your Courses</b></label><br><br>
+            <select id="courses" name="courses" size="10" multiple>
+                <option value="ece1">ECE-300 Communication Systems</option>
+                <option value="ece2">ECE-105 Basic Electronics</option>
+                <option value="ec3">ECE-203 Control Systems</option>
+                <option value="mech1">MECH-208 Automobiles</option>
+                <option value="mech2">MECH-102 Strength of materials</option>
+                <option value="mech3">MECH-323 Metals</option>
+                <option value="cse1">CSE-219 Object oriented programming</option>
+                <option value="bth1">BioTech-423 Green Technology</option>
+                <option value="che">CHEM-121 Stiochometry</option>
+                <option value="che2">CHEM-142 Chemical analysis</option>
+                <option value="che4">CHEM-152 Energy sources</option>
+            </select><br><br>
+            <input type="submit">
+        </form>
+        <h3>Finish the Registration</h3>
+        <h4>I have selected my corresponding courses and branch</h4>
+        <form>
+            <input type="checkbox" id="1" name="1">
+            <label for="1">Yes</label>
+            <input type="checkbox" id="2" name="2">
+            <label for="2">No</label>
+        </form>
+        <br>
+        <button type="button" onclick="alert('Hello World!')">Register!</button>
+        <br><hr>
+        <h2>Feedback</h2>
+        <form>
+            <textarea name="msg" rows="10" cols="30">Please Enter your feedback of the online registration process</textarea>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
